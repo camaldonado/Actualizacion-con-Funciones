@@ -6,6 +6,17 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript">
+      function miFuncion()
+      {
+        var dim=parseInt(prompt("Ingresa la dimencion"));
+    var listaNum=new Array(dim);
+    for(var i=0;i<listaNum.length;i++){
+        listaNum[i]=parseInt(Math.random()*10);
+    }
+    document.write(listaNum.toString());
+      }
+      </script>
   </head>
   <body>
     <header class="header">
@@ -35,7 +46,22 @@
         </h1>
         <img class="hero-image" src="images/imagenprincipal.png" width="500" height="300" alt="imagen principal del sitio"> 
       </div>
+      
     </section>
+    
+    <center> 
+        <form>
+          
+            <input type="button"
+            onclick="miFuncion()"
+            value= "Generar Numeros Aleatorios">
+            </form>
+    </center>
+
+    
+  
+    
+
     <section id="portafolio" class="portfolio">
       <div class="container">
         <h2>Portafolio (Proyectos Destacados)</h2>
